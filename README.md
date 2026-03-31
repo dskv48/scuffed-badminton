@@ -1,6 +1,6 @@
 # The Scuffed Badminton Problem
 
-This repository contains the official paper, algorithmic code, and simulation scripts for **"The Scuffed Badminton Problem: Finding the Expected Hitting Time for the (1,n) State in a Simplification-Based Scoring System"**, accepted for publication in *Parabola* (Volume 62, Issue 2, August 2026).
+This repository contains the official paper, algorithmic code, and simulation scripts for **"The Scuffed Badminton Problem: Finding the Expected Hitting Time for the (1,n) State in a Simplification-Based Scoring System"**.
 
 📄 **[Read the full paper here (PDF)](./The_Scuffed_Badminton_Problem__Finding_the_Expected_Hitting_Time_for_the__1_n__State.pdf)**
 
