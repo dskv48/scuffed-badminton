@@ -6,7 +6,7 @@ using namespace std;
 const int MAX = 5000;
 
 int g;
-bool visited[MAX][MAX];
+vector<vector<bool>> visited(MAX, vector<bool>(MAX));
 
 int gcd(int a, int b) {
     if (a == b) {
@@ -49,5 +49,6 @@ int main() {
         }
     }
 
+    // Begin DFS traversal from (2, 11)
     dfs_visit(2, 11);
 }
