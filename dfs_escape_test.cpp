@@ -3,7 +3,7 @@
 #include <iomanip>
 using namespace std;
 
-const int MAX = 1000;
+const int MAX = 5000;
 
 int g;
 bool visited[MAX][MAX];
@@ -27,10 +27,8 @@ void dfs_visit(int i, int j) {
     visited[i][j] = true;
     if (j == MAX - 1) {
         return;
-    } else if (i == 1 && j == 1) {
-        if (!visited[1][2]) {
-            dfs_visit(1, 2);
-        }
+    } else if (i == 1 || j == 1) {
+        return;
     } else {
         g = gcd(i + 1, j);
         if (!visited[(i + 1) / g][j / g]) {
