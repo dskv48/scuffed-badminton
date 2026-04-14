@@ -3,8 +3,10 @@
 #include <iomanip>
 using namespace std;
 
+const int MAX = 1000;
+
 int g;
-bool visited[9000][9000];
+bool visited[MAX][MAX];
 
 int gcd(int a, int b) {
     if (a == b) {
@@ -23,7 +25,7 @@ int gcd(int a, int b) {
 void dfs_visit(int i, int j) {
     cout << i << ' ' << j << '\n';
     visited[i][j] = true;
-    if (j == 8999) {
+    if (j == MAX - 1) {
         return;
     } else if (i == 1 && j == 1) {
         if (!visited[1][2]) {
@@ -43,8 +45,8 @@ void dfs_visit(int i, int j) {
 }
 
 int main() {
-    for (int i = 0; i < 9000; i++) {
-        for (int j = 0; j < 9000; j++) {
+    for (int i = 0; i < MAX; i++) {
+        for (int j = 0; j < MAX; j++) {
             visited[i][j] = false;
         }
     }
